@@ -1,13 +1,12 @@
-# TODO: optlags
 Summary:	Console Fucker - attaching to Linux console remotely
 Summary(pl):	Console Fucker - zdalne pod³±czanie siê do konsoli linuksowej
 Name:		cf
-Version:	0.7.2
+Version:	0.7.3
 Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://glen.alkohol.ee/cf/%{name}-%{version}.tar.bz2
-# Source0-md5:	503093d7c2b31c8b70aede7bdf1e8afd
+# Source0-md5:	bfd46f823894de1cfd02e310f246c9e3
 URL:		http://glen.alkohol.ee/cf/
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,7 +25,9 @@ rm -rf $RPM_BUILD_ROOT
 %setup -q
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	OPTFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
