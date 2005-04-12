@@ -4,11 +4,11 @@ Version:	0.7.2
 Release:	1
 License:	GPL
 Group:		Applications/System
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Source0:	http://glen.alkohol.ee/cf/%{name}-%{version}.tar.bz2
 # Source0-md5:	503093d7c2b31c8b70aede7bdf1e8afd
 URL:		http://glen.alkohol.ee/cf/
 BuildRequires:	ncurses-devel
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Console Fucker program allows you 'attach' linux console remotely.
