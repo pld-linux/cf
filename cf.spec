@@ -1,5 +1,5 @@
 Summary:	Console Fucker - attaching to Linux console remotely
-Summary(pl):	Console Fucker - zdalne pod³±czanie siê do konsoli linuksowej
+Summary(pl.UTF-8):   Console Fucker - zdalne podÅ‚Ä…czanie siÄ™ do konsoli linuksowej
 Name:		cf
 Version:	0.7.3
 Release:	1
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Console Fucker program allows you 'attach' Linux console remotely.
 
-%description -l pl
-Program Console Fucker pozwala na zdalne pod³±czanie siê do konsoli
+%description -l pl.UTF-8
+Program Console Fucker pozwala na zdalne podÅ‚Ä…czanie siÄ™ do konsoli
 linuksowej.
 
 %clean
