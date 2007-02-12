@@ -1,5 +1,5 @@
 Summary:	Console Fucker - attaching to Linux console remotely
-Summary(pl.UTF-8):   Console Fucker - zdalne podłączanie się do konsoli linuksowej
+Summary(pl.UTF-8):	Console Fucker - zdalne podłączanie się do konsoli linuksowej
 Name:		cf
 Version:	0.7.3
 Release:	1
