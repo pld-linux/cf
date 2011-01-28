@@ -18,9 +18,6 @@ Console Fucker program allows you 'attach' Linux console remotely.
 Program Console Fucker pozwala na zdalne podłączanie się do konsoli
 linuksowej.
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %prep
 %setup -q
 
@@ -35,6 +32,9 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir}}
 
 install cf $RPM_BUILD_ROOT%{_sbindir}
 ln -s ../sbin/cf $RPM_BUILD_ROOT%{_bindir}/cdump
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
